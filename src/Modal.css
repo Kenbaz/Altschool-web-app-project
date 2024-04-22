@@ -1,0 +1,55 @@
+.modal-container {
+    position: absolute;
+    z-index: 999;
+    border: 1px solid #3E4C59;
+    width: 500px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(55px);
+    transition:  0.10s ease-out;
+    height: 300px;
+    top: 129px;
+    left: 401px;
+    border-left: none;
+    text-align: start;
+
+    .modal-content {
+        padding: 20px;
+        margin-block-start: -20px;
+
+        .repo-item {
+            display: flex;
+            flex-direction: column;
+            margin-block-end: 20px;
+
+            label {
+                color: #52606D;
+
+                span {
+                    margin-inline-start: 2px;
+                }
+            }
+
+            input {
+                height: 25px;
+                outline: none;
+                border: 1px solid #3E4C59;
+                font-size: 15px
+            }
+        };
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+
+            button:nth-of-type(1) {
+                background-color: #3E4C59;
+                border-radius: 0;
+            }
+            button:nth-of-type(2) {
+                background-color: #3E4C59;
+                border-radius: 0;
+            } 
+        }
+    }
+}

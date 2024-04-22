@@ -1,0 +1,16 @@
+.error-boundary {
+    margin: 0 auto;
+
+    h2 {
+        font-size: 28px;
+        position: relative;
+
+        .icon {
+            font-size: 40px;
+            color: red;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+        }
+    }
+}

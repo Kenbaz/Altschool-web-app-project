@@ -1,0 +1,93 @@
+.error-page {
+    width: 430px;
+    margin: 0 auto;
+    border: 1px solid #3E4C59;;
+    height: 100vh;
+
+    header {
+        height: 80px;
+        background-color: #000;
+    }
+
+    .not-found-container {
+        position: relative;
+
+        .fontawesome-icon {
+            position: absolute;
+            top: 114px;
+            left: 32px;
+        }
+
+        .error-list {
+            margin-inline-start: 30px;
+            margin-block-start: 20px;
+            margin-block-end: 30px;
+
+            p {
+                margin-inline-start: 20px;
+            }
+        }
+    };
+
+    button {
+        margin-inline-start: 160px;
+        background-color: rgba(255, 255, 255, 0.87);
+        color: #000;
+        /* border-radius: 0; */
+    }
+}
+
+@media (min-width: 48em) {
+    .error-page {
+        width: 768px;
+
+        .not-found-container {
+            margin-inline-start: 100px;
+
+            .fontawesome-icon {
+                position: absolute;
+                top: 66px;
+            }
+
+            .error-list {
+                margin-block-start: 80px;
+
+                p {
+                    margin-block-start: 10px;
+                }
+            }
+        }
+
+        button {
+            margin-inline-start: 350px;
+            margin-block-start: 40px;
+        }
+    }
+}
+
+@media (min-width: 64em) {
+    #root {
+        .error-page {
+            border: 1px solid;
+            width: 100%;
+
+            .not-found-container {
+                .error-list {
+                    width: 700px;
+                    text-align: center;
+                    margin-inline-start: 340px;
+                }
+
+                .fontawesome-icon {
+                        left: 530px;
+                    }
+            }
+
+            button {
+                position: absolute;
+                left: 400px;
+                border-radius: 0;
+            }
+        }
+    }
+}
