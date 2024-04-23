@@ -68,17 +68,25 @@ button:focus-visible {
 
 @media (min-width: 48em) {
   #root {
+   overflow: hidden;
     .home {
-      border: none;
-      width: 768px;
+      border: 1px solid #1a1a1a;
+      width: 765px;
+      margin-inline-start: 19px;
+      max-width: fit-content;
+      height: auto;
+      /* overflow: hidden; */
 
       .header2 {
         display: none;
       }
 
       .main {
-        border: 1px solid #3E4C59;
-        width: 95%;
+        border: 1px solid #1a1a1a;
+        width: 100%;
+        
+        height: 100vh;
+        overflow-x: hidden;
         margin: 0 auto;
         .loading-readme {
             top: 200px;
@@ -86,8 +94,13 @@ button:focus-visible {
           }
         
         .readme-container {
+          margin-block-start: 120px;
+          margin-block-end: 50px;
+          height: auto;
+          /* border: 1px solid blue; */
 
           .readme-content-container {
+            height: 200px;
             .avatar {
               width: 90px;
               height: 90px;
@@ -110,7 +123,10 @@ button:focus-visible {
           }
 
           header {
-            width: 95%;
+            width: 100%;
+            height: 100px;
+            margin-inline-start: 10px;
+            /* overflow: hidden; */
 
             .search-container {
               outline: none;
@@ -139,6 +155,7 @@ button:focus-visible {
 
             .create-btn {
               margin-inline-start: 20px;
+              width: 100px;
               /* border-radius: 0; */
             }
           }
@@ -146,16 +163,36 @@ button:focus-visible {
           .main-repo-container {
 
             .modal-container{
-              top: -179px;
+              top: -281px;
+              left: 7px;
+              border-top: none;
+            }
+
+            h2 {
+              margin-block-start: -15px;
+              margin-block-end: 30px;
             }
               .all-repos-container {
                 .repo-wrapper {
+
+                  .repo-container{
+                    height: 100px;
+
+                    h3 {
+                      margin-block-start: -15px;
+                      margin-block-end: 15px;
+                    }
+                  }
+
                   button {
                     width: 90px;
                     padding: 5px;
                     /* border-radius: 0; */
                   }
                 }
+              }
+              hr {
+                width: 110%;
               }
             }
 
@@ -175,8 +212,10 @@ button:focus-visible {
     background-color: #1a1a1a;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
     .home {
+      margin-inline-start: 0px;
       overflow-x: hidden;
       width: 100%;
       max-width: fit-content;
@@ -184,7 +223,7 @@ button:focus-visible {
       grid-template-columns: repeat(3);
       grid-template-areas: "head head head"
       "sidebar main main";
-      column-gap: 20px;
+      /* column-gap: 20px; */
 
       .sidebar {
         grid-area: sidebar;
@@ -217,15 +256,6 @@ button:focus-visible {
               }
           
             }
-          
-            .avatar {
-              border-radius: 50%;
-              width: 25px;
-              height: 25px;
-              position: relative;
-              top: 6px;
-              right: 3px;
-            }
         }
       }
 
@@ -238,7 +268,7 @@ button:focus-visible {
         display: block;
         background: #000;
         height: 90px;
-        border: 1px solid #3E4C59;
+        /* border: 1px solid #3E4C59; */
       }
 
       .main {
@@ -339,8 +369,8 @@ button:focus-visible {
             margin-inline-start: 50px;
 
             .modal-container {
-              top: -163px;
-              left: -71px;
+              top: -240px;
+              left: -55px;
             }
 
             hr {
@@ -350,6 +380,7 @@ button:focus-visible {
             .all-repos-container {
               h2 {
                 text-align: center;
+                margin-block-start: -50px;
               }
 
               .repo-wrapper {

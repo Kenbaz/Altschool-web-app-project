@@ -1,7 +1,6 @@
 .error-page {
     width: 430px;
     margin: 0 auto;
-    border: 1px solid #3E4C59;;
     height: 100vh;
 
     header {
@@ -68,7 +67,6 @@
 @media (min-width: 64em) {
     #root {
         .error-page {
-            border: 1px solid;
             width: 100%;
 
             .not-found-container {

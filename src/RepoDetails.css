@@ -8,7 +8,7 @@
     max-width: 100%;
     margin: 0 auto;
     height: 100vh;
-    border: 1px solid #3E4C59;
+    /* border: 1px solid #3E4C59; */
     background-color: #1a1a1a;
 
     header {
@@ -90,7 +90,6 @@
         .details-fragment {
             
             header {
-                border: 1px solid #3E4C59;
 
                 p {
                     display: block;
