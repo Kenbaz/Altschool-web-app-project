@@ -23,7 +23,7 @@
         }
 
         h2 {
-            margin-inline-start: 5px;
+            margin-inline-start: 6px;
         }
 
         .avatar {
@@ -34,7 +34,7 @@
     .details-container {
         /* padding: 10px; */
         margin-block-start: 10px;
-        margin-inline-start: 5px;
+        margin-inline-start: 6px;
     
         height: auto;
 
