@@ -1,7 +1,8 @@
+import image from "../assets/images/avatar.JPG"
 
 function Avatar() {
     return (
-        <img src="/public/IMG_2152.JPG" className="avatar" alt="avatar"/>
+        <img src={image} className="avatar" alt="avatar"/>
     )
 }
 

@@ -5,10 +5,10 @@
 
 .details-fragment {
     width: 430px;
-    max-width: 100%;
+    max-width: 102%;
     margin: 0 auto;
     height: 100vh;
-    /* border: 1px solid #3E4C59; */
+    overflow-x: hidden;
     background-color: #1a1a1a;
 
     header {
@@ -22,18 +22,15 @@
             display: none;
         }
 
-        h2 {
-            margin-inline-start: 20px;
-        }
-
         .avatar {
            display: none;
         }
     };
 
     .details-container {
-        margin-inline-start: 20px;
-        padding: 10px;
+        /* padding: 10px; */
+        margin-block-start: 5px;
+        margin-inline-start: 2px;
     
         height: auto;
 
@@ -52,6 +49,8 @@
                 transform: scale(1, 0.2);
                 color: #3E4C59;
                 margin-block-end: 10px;
+                margin-inline-start: -5px;
+                overflow-x: hidden
             }
         }
     };

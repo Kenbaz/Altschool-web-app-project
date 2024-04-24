@@ -33,6 +33,7 @@ function Readme() {
           <p>
             Kenbaz <span>/ </span>README<span>.md</span>
           </p>
+          <Avatar/>
           <div className="readme-content">{newReadmeContent}</div>
         </div>
         <hr className="line"/>

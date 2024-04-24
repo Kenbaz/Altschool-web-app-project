@@ -79,19 +79,19 @@ const Repos = () => {
 
   return (
     <div className="fragment">
+      <Helmet title="Repository Home" />
       <div className="copy">
         <SearchBar onSearch={setSearchQuery} />
         <button className="create-btn" onClick={() => setIsModalOpen(true)}>
           <FontAwesomeIcon icon={faPlus} /> New
         </button>
       </div>
-      <header>
-        <Helmet title="Repository Home" />
+      {/* <header>
         <SearchBar onSearch={setSearchQuery} />
         <button className="create-btn" onClick={() => setIsModalOpen(true)}>
           <FontAwesomeIcon icon={faPlus} /> New
         </button>
-      </header>
+      </header> */}
       <div className="main-repo-container">
         <Modal
           isOpen={isModalOpen}

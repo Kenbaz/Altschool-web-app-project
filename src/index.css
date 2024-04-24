@@ -71,23 +71,25 @@ button:focus-visible {
    overflow: hidden;
     .home {
       border: 1px solid #1a1a1a;
-      width: 765px;
-      margin-inline-start: 19px;
+      width: 100vw;
       max-width: fit-content;
       height: auto;
-      /* overflow: hidden; */
 
       .header2 {
-        display: none;
+        display: block;
+        background-color: #000;
+        width: 112%;
+        height: 100px;
+        margin-inline-start: -30px;
+        margin-block-end: -100px;
       }
 
       .main {
         border: 1px solid #1a1a1a;
         width: 100%;
+        height: auto;
         
-        height: 100vh;
-        overflow-x: hidden;
-        margin: 0 auto;
+
         .loading-readme {
             top: 200px;
             left: 400px;
@@ -95,15 +97,17 @@ button:focus-visible {
         
         .readme-container {
           margin-block-start: 120px;
-          margin-block-end: 50px;
-          height: auto;
+          margin-block-end: 20px;
+          height: 300px;
           /* border: 1px solid blue; */
 
           .readme-content-container {
-            height: 200px;
+            height: auto;
+            width: 95%;
+            /* border: 1px solid red; */
             .avatar {
-              width: 90px;
-              height: 90px;
+              width: 120px;
+              height: 120px;
             }
             p {
               margin-block-end: 5px
@@ -119,52 +123,51 @@ button:focus-visible {
 
         .fragment {
           .copy {
-            display: none;
-          }
-
-          header {
-            width: 100%;
-            height: 100px;
-            margin-inline-start: 10px;
-            /* overflow: hidden; */
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 50px;
 
             .search-container {
-              outline: none;
-              width: 450px;
-              position: relative;
-              border: none;
-
-              .search-input {
-                width: 100%;
-                padding: 10px;
-                font-size: 15px;
+                outline: none;
+                width: 450px;
+                position: relative;
+                border: none;
+            
+                .search-input {
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 15px;
+                }
+            
+                .search-input::placeholder {
+                  font-weight: 500;
+                  font-size: 15px;
+                }
+            
+                button {
+                  position: absolute;
+                  left: 450px;
+                  width: 90px;
+                }
               }
-
-              .search-input::placeholder {
-                font-weight: 500;
-                font-size: 15px;
-              }
-
-              button {
+            
+              .create-btn {
+                width: 100px;
+                border-radius: 10px;
                 position: absolute;
-                left: 450px;
-                /* border-radius: 0; */
-                width: 90px;
+                left: 570px;
+                top: 0px;
               }
-            }
-
-            .create-btn {
-              margin-inline-start: 20px;
-              width: 100px;
-              /* border-radius: 0; */
-            }
           }
+
+         
 
           .main-repo-container {
 
             .modal-container{
-              top: -281px;
-              left: 7px;
+              top: -345px;
+              left: 0px;
               border-top: none;
             }
 
@@ -207,17 +210,15 @@ button:focus-visible {
 
 @media (min-width: 64em) {
   #root {
-    box-sizing: border-box;
     height: auto;
     background-color: #1a1a1a;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 
     .home {
       margin-inline-start: 0px;
-      overflow-x: hidden;
-      width: 100%;
+      /* overflow-x: hidden; */
+      width: 100vw;
       max-width: fit-content;
       display: grid;
       grid-template-columns: repeat(3);
@@ -268,11 +269,14 @@ button:focus-visible {
         display: block;
         background: #000;
         height: 90px;
+        margin-block-end: 0px;
+    
         /* border: 1px solid #3E4C59; */
       }
 
       .main {
         width: 1260px;
+        height: auto;
 
         .loading-readme {
             top: 200px;
@@ -292,9 +296,6 @@ button:focus-visible {
             }
 
           .readme-content-container {
-            .avatar {
-              border-radius: 50%;
-            }
 
             p {
               margin-block-start: 20px;
@@ -344,7 +345,8 @@ button:focus-visible {
             
                 button {
                   position: absolute;
-                  background-color: #3E4C59;
+                  background-color: #ccc;
+                  color: #000;
                   left: 455px;
                   width: 90px;
                   /* border-radius: 0; */
@@ -352,7 +354,8 @@ button:focus-visible {
               }
 
               .create-btn {
-                background-color: #3E4C59;
+                background-color: #ccc;
+                color: #000;
                 position: absolute;
                 top: 80px;
                 left: -410px;
@@ -369,8 +372,8 @@ button:focus-visible {
             margin-inline-start: 50px;
 
             .modal-container {
-              top: -240px;
-              left: -55px;
+              top: -291px;
+              left: -52px;
             }
 
             hr {
