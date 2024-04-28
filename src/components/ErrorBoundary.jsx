@@ -17,10 +17,11 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="error-boundary">
-          <h2><FontAwesomeIcon className="icon" icon={faExclamation}/>Something went wrong.</h2>
-          <p>
-            Please go back to the <Link to="/">home page <FontAwesomeIcon icon={faHome}/></Link>.
-          </p>
+          <h2>
+            <FontAwesomeIcon className="icon" icon={faExclamation} />
+            Something went wrong.
+          </h2>
+          <button onClick={() => window.location.reload()}>refresh page</button>
         </div>
       );
     }
