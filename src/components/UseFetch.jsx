@@ -3,23 +3,30 @@ import { useState, useEffect } from "react";
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  
   useEffect(() => {
-      fetch(url).then((res) => {
+    setIsLoading(true);
+
+    fetch(url)
+      .then((res) => {
         if (!res.ok) {
-            throw Error('Error fetching repositories');
+          throw Error("Error fetching repositories");
         }
-        return res.json()
-    }).then(data => {
+        return res.json();
+      })
+      .then((data) => {
         setData(data);
         setError(null);
-    }).catch(err => {
-        setError(err.message)
-    })
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsLoading(false);
+      });
   }, [url]);
-    
-    return { data, error };
-};
+
+  return { data, error, isLoading };
+}
 
 export default useFetch;

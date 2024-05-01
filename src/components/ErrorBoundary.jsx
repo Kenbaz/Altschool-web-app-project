@@ -8,19 +8,23 @@ class ErrorBoundary extends Component {
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
   render() {
     if (this.state.hasError) {
       return (
-        <div className="error-boundary">
-          <h2>
-            <FontAwesomeIcon className="icon" icon={faExclamation} />
-            Something went wrong.
+        <div className="error-boundary grid place-items-center mt-40">
+          <h2 className="mb-5 text-xl font-medium md:text-5xl">
+            Something went wrong <FontAwesomeIcon icon={faExclamation} />
           </h2>
-          <button onClick={() => window.location.reload()}>refresh page</button>
+          <button
+            className="bg-tinWhite text-gray-800 md:w-44 md:h-16 md:text-2xl md:p-1"
+            onClick={() => window.location.reload()}
+          >
+            Refresh page
+          </button>
         </div>
       );
     }
