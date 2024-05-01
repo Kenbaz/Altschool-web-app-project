@@ -114,7 +114,7 @@ const Repos = () => {
             <div className="repo-wrapper text-sm grid gap-2 md:text-2xl md:gap-4 lg:text-base lg:repo-grid lg:mb-7">
               {currentResults.map((repo) => (
                 <div
-                  className="repo-container border w-11/12 m-auto border-secondary rounded-md grid place-items-center lg:w-full lg:rounded-lg lg:h-52"
+                  className="repo-container border w-11/12 m-auto border-secondary rounded-md grid place-items-center lg:w-full lg:rounded-lg lg:h-64"
                   key={repo.id}
                 >
                   <h3 className="font-bold md:text-3xl mt-3 lg:text-xl lg:font-medium">

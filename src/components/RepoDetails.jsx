@@ -96,7 +96,7 @@ function RepoDetails() {
               <span className="span-style">Languages:</span>{" "}
               {repo.languages
                 ? repo.languages.join(", ")
-                : "No languages specified"}
+                : "..."}
             </p>
             <p className="mb-1 md:mb-2">
               <span className="span-style">Owner:</span> {repo.owner.login}
