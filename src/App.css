@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.span-style {
+  @apply text-spanColor font-bold
+}
+
+.span-text {
+  @apply text-sm
+}
+
+@layer utilities {
+  .grid-styles {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    margin-block-start: -20px;
+    margin-block-end: -65px;
+  }
+
+  ;
+}
+
+@layer components {
+  #modal-position {
+    position: absolute;
+    top: 156px;
+    left: 350px;
+    border-left: none;
+  }
+}
+
+@layer base {
+  .repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  ;
+}
