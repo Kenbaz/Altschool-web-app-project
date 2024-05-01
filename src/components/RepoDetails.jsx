@@ -38,13 +38,7 @@ function RepoDetails() {
     const fetchLanguages = async () => {
       if (repo) {
         try {
-          const response = await fetch(repo.languages_url, {
-            headers: {
-              Authorization: `token ${
-                import.meta.env.VITE_REACT_APP_GITHUB_TOKEN
-              }`,
-            },
-          });
+          const response = await fetch(repo.languages_url);
           if (!response.ok) {
             throw new Error("Failed to fetch languages");
           }
