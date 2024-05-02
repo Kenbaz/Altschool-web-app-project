@@ -17,8 +17,7 @@ function Modal({ isOpen, onSubmit, onClose }) {
   return (
     isOpen && (
       <div
-        className="modal-container border border-t-0 border-secondary bg-transparent backdrop-filter backdrop-blur-md backdrop-opacity-105 absolute top-16 h-64 hidden w-11/12 md:top-20 md:h-96 lg:w-4/12 lg:border lg:h-80 lg:block"
-        id="modal-position"
+        className="modal-container border border-secondary bg-transparent backdrop-filter backdrop-blur-md backdrop-opacity-105 absolute top-10 h-72 w-11/12 md:h-96 md:top-16 lg:h-80 lg:-top-48 lg:-left-0"
       >
         <div className="modal-content ms-3 mt-3 grid place-items-center lg:place-items-start lg:ms-5">
           <h2 className="text-lg font-bold md:text-4xl mb-3 lg:text-2xl">
@@ -28,7 +27,7 @@ function Modal({ isOpen, onSubmit, onClose }) {
             <div className="repo-item grid mb-2 md:text-3xl lg:text-lg gap-1">
               <label htmlFor="repoName">Repository name</label>
               <input
-                className="border rounded-md h-8 w-72 pl-2 text-sm font-medium placeholder-slate-200 focus:outline-none md:w-96 md:h-14 md:text-2xl lg:text-base lg:h-10 lg:w-full"
+                className="border rounded-md h-8 w-full pl-2 text-sm font-medium placeholder-slate-200 focus:outline-none md:w-96 md:h-14 md:text-2xl md:w-full lg:text-base lg:h-10 lg:w-full"
                 type="text"
                 placeholder="Enter name"
                 id="repoName"

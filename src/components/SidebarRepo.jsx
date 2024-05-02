@@ -29,7 +29,7 @@ function SidebarRepoList() {
 
   return (
     <>
-      <div className="sidebar-container lg:mt-10">
+      <div className="sidebar-container lg:mt-14">
         <h3 className="ms-4 mb-3 font-medium">Top Repositories</h3>
 
         <div className="lg:border lg:w-11/12 lg:m-auto lg:h-10 lg:rounded-md border-secondary hover:border-cyan-600">

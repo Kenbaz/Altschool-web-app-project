@@ -75,16 +75,16 @@ const Repos = () => {
   };
 
   return (
-    <div className="fragment mt-2">
+    <div className="fragment mt-2 relative">
       <Helmet title="Repository Home" />
-      <div className="flex justify-around absolute w-full top-5 lg:w-2/3">
+      <div className="flex justify-around w-11/12 m-auto mt-4 mb-4 lg:w-2/3">
         <SearchBar
           onSearch={setSearchQuery}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
         <button
-          className="w-20 h-9 p-1 border-secondary text-sm hover:border-cyan-600 md:w-28 md:h-14 md:text-2xl lg:h-9 lg:text-sm lg:w-16 lg:absolute lg:-left-20 hidden lg:block lg:top-24"
+          className="h-9 w-20 -ms-4 p-1 border-secondary text-sm hover:border-cyan-600 md:w-32 md:-ms-10 md:h-14 md:text-2xl lg:h-9 lg:text-sm lg:w-16 lg:absolute lg:-left-10 lg:-top-56"
           onClick={() => setIsModalOpen(true)}
         >
           <FontAwesomeIcon icon={faPlus} /> New
@@ -158,13 +158,13 @@ const Repos = () => {
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className="h-8 py-0 w-20 text-sm bg-tinWhite text-gray-800 md:w-32 md:h-12 md:text-2xl md:py-1 lg:w-24 lg:h-10 lg:text-base relative"
+              className="h-8 py-0 w-20 text-sm bg-tinWhite text-gray-800 md:w-32 md:h-12 md:text-2xl md:py-1 lg:w-24 lg:h-10 lg:text-base"
               onClick={handleNextPage}
               disabled={currentPage === totalPages}
             >
               Next
               <FontAwesomeIcon
-                className="ms-1 mt-2 md:absolute md:bottom-9 md:mt-2.5 md:left-9 lg:left-16 lg:top-0"
+                className="ms-1 mt-2 md:relative md:bottom-9 md:mt-2.5 md:left-9 lg:-left-0 lg:top-0"
                 icon={faChevronRight}
               />
             </button>

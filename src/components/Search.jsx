@@ -16,9 +16,9 @@ function SearchBar({ onSearch, currentPage, setCurrentPage }) {
   }
 
   return (
-    <div className="w-3/4 rounded-md border border-secondary hover:border-cyan-700 lg:w-3/6 lg:h-11 lg:ms-96">
+    <div className="rounded-md w-2/3 border border-secondary hover:border-cyan-700 lg:w-3/4 lg:h-11 lg:rounded-lg">
       <input
-        className="w-full h-8 rounded-md placeholder-gray-600 relative pl-2 text-sm font-medium focus:outline-none md:h-14 md:text-2xl md:pl-4 lg:text-base lg:h-10"
+        className="w-full h-full rounded-md placeholder-gray-600 relative pl-2 text-sm font-medium focus:outline-none md:h-14 md:text-2xl md:pl-4 lg:text-base lg:h-full lg:rounded-lg"
         type="text"
         placeholder="Search repository..."
         value={searchQuery}
