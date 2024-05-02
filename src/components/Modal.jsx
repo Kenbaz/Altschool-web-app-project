@@ -1,16 +1,13 @@
-// Import useState
 import { useState } from "react";
 
 function Modal({ isOpen, onSubmit, onClose }) {
-  // Define state variables for repo name and description
   const [repoName, setRepoName] = useState("");
   const [repoDescription, setRepoDescription] = useState("");
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(repoName, repoDescription);
-    setRepoName(""); // Clear the input field after submission
+    setRepoName("");
     setRepoDescription("");
   };
 
@@ -27,12 +24,12 @@ function Modal({ isOpen, onSubmit, onClose }) {
             <div className="repo-item grid mb-2 md:text-3xl lg:text-lg gap-1">
               <label htmlFor="repoName">Repository name</label>
               <input
-                className="border rounded-md h-8 w-full pl-2 text-sm font-medium placeholder-slate-200 focus:outline-none md:w-96 md:h-14 md:text-2xl md:w-full lg:text-base lg:h-10 lg:w-full"
+                className="border rounded-md h-8 w-full pl-2 text-sm font-medium placeholder-slate-200 focus:outline-none md:h-14 md:text-2xl md:w-full lg:text-base lg:h-10 lg:w-full"
                 type="text"
                 placeholder="Enter name"
                 id="repoName"
                 value={repoName}
-                onChange={(e) => setRepoName(e.target.value)} // Add onChange handler
+                onChange={(e) => setRepoName(e.target.value)}
               />
             </div>
             <div className="repo-item grid mb-5 md:mt-5 md:text-3xl lg:text-lg gap-1">
@@ -44,8 +41,8 @@ function Modal({ isOpen, onSubmit, onClose }) {
                 type="text"
                 id="description"
                 value={repoDescription}
-                onChange={(e) => setRepoDescription(e.target.value)} // Add onChange handler
-                placeholder="Enter description" // Add placeholder
+                onChange={(e) => setRepoDescription(e.target.value)}
+                placeholder="Enter description"
               />
             </div>
             <div className="btn-container flex gap-2 md:text-2xl lg:text-lg">
