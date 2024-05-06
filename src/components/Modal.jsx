@@ -14,7 +14,7 @@ function Modal({ isOpen, onSubmit, onClose }) {
   return (
     isOpen && (
       <div
-        className="modal-container border border-secondary bg-transparent backdrop-filter backdrop-blur-md backdrop-opacity-105 absolute top-10 h-72 w-11/12 md:h-96 md:top-16 lg:h-80 lg:-top-48 lg:-left-0"
+        className="modal-container border border-secondary z-10 bg-transparent backdrop-filter backdrop-blur-md backdrop-opacity-105 absolute top-14 h-72 w-11/12 md:h-96 md:top-20 lg:h-80 lg:-top-48 lg:-left-0"
       >
         <div className="modal-content ms-3 mt-3 grid place-items-center lg:place-items-start lg:ms-5">
           <h2 className="text-lg font-bold md:text-4xl mb-3 lg:text-2xl">
